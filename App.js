@@ -13,9 +13,17 @@ export default function App() {
       <Text>Enter name:</Text>
 
       <TextInput
+        multiline
         style={styles.input}
-        placeholder='e.g. Mom Name'
+        placeholder='e.g. Name'
         onChangeText={(val) => setName(val)} />
+
+      <Text> Enter age: </Text>
+      <TextInput
+        keyboardType='numeric'
+        style={styles.input}
+        placeholder='e.g. Age'
+        onChangeText={(val) => setAge(val)} />
 
 
       <Text>name: {name}, age: {age}</Text>
